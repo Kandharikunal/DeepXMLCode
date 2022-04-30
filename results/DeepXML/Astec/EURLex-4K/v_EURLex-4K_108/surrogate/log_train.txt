@@ -1,0 +1,206 @@
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.057411, time: 46.53 sec
+Model saved after epoch: 0
+P@1: 14.68, loss: 0.030033, time: 6.72 sec
+Epoch: 1, loss: 0.028301, time: 43.83 sec
+Epoch: 2, loss: 0.024107, time: 41.42 sec
+Epoch: 3, loss: 0.021609, time: 41.24 sec
+Epoch: 4, loss: 0.019719, time: 41.53 sec
+Epoch: 5, loss: 0.018220, time: 42.78 sec
+Model saved after epoch: 5
+P@1: 73.14, loss: 0.017281, time: 6.94 sec
+Epoch: 6, loss: 0.016958, time: 40.92 sec
+Epoch: 7, loss: 0.015895, time: 42.67 sec
+Epoch: 8, loss: 0.015050, time: 50.98 sec
+Epoch: 9, loss: 0.014256, time: 53.82 sec
+Epoch: 10, loss: 0.013528, time: 52.48 sec
+Model saved after epoch: 10
+P@1: 78.42, loss: 0.015265, time: 10.25 sec
+Epoch: 11, loss: 0.012894, time: 47.48 sec
+Epoch: 12, loss: 0.012349, time: 44.86 sec
+Epoch: 13, loss: 0.011770, time: 44.38 sec
+Adjusted learning rate to: 0.005
+Epoch: 14, loss: 0.011109, time: 42.64 sec
+Epoch: 15, loss: 0.010738, time: 43.03 sec
+Model saved after epoch: 15
+Purging network checkpoint: checkpoint_net_1.pkl
+P@1: 80.39, loss: 0.014839, time: 6.63 sec
+Epoch: 16, loss: 0.010468, time: 41.89 sec
+Epoch: 17, loss: 0.010241, time: 41.47 sec
+Epoch: 18, loss: 0.009996, time: 43.30 sec
+Epoch: 19, loss: 0.009785, time: 42.09 sec
+Purging network checkpoint: checkpoint_net_6.pkl
+Training time: 889.33 sec, Validation time: 30.55 sec, Shortlist time: 0.00 sec, Model size: 47.30 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.057411, time: 44.91 sec
+Model saved after epoch: 0
+P@1: 14.68, loss: 0.030033, time: 6.79 sec
+Epoch: 1, loss: 0.028301, time: 42.16 sec
+Epoch: 2, loss: 0.024107, time: 52.57 sec
+Epoch: 3, loss: 0.021609, time: 53.48 sec
+Epoch: 4, loss: 0.019719, time: 48.58 sec
+Training time: 241.71 sec, Validation time: 6.79 sec, Shortlist time: 0.00 sec, Model size: 47.30 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.057741, time: 50.25 sec
+Model saved after epoch: 0
+P@1: 15.67, loss: 0.030300, time: 7.21 sec
+Epoch: 1, loss: 0.028519, time: 55.47 sec
+Training time: 105.72 sec, Validation time: 7.21 sec, Shortlist time: 0.00 sec, Model size: 47.30 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076668, time: 54.98 sec
+Model saved after epoch: 0
+P@1: 17.64, loss: 0.030908, time: 6.71 sec
+Epoch: 1, loss: 0.028121, time: 49.31 sec
+Training time: 104.29 sec, Validation time: 6.71 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076668, time: 60.47 sec
+Model saved after epoch: 0
+P@1: 17.64, loss: 0.030908, time: 7.09 sec
+Epoch: 1, loss: 0.028121, time: 42.57 sec
+Training time: 103.04 sec, Validation time: 7.09 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076668, time: 41.24 sec
+Model saved after epoch: 0
+P@1: 17.64, loss: 0.030908, time: 6.76 sec
+Epoch: 1, loss: 0.028121, time: 45.99 sec
+Training time: 87.23 sec, Validation time: 6.76 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076668, time: 43.59 sec
+Model saved after epoch: 0
+P@1: 17.64, loss: 0.030908, time: 6.68 sec
+Epoch: 1, loss: 0.028121, time: 43.22 sec
+Training time: 86.82 sec, Validation time: 6.68 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076668, time: 51.14 sec
+Model saved after epoch: 0
+P@1: 17.64, loss: 0.030908, time: 6.69 sec
+Epoch: 1, loss: 0.028121, time: 39.96 sec
+Training time: 91.10 sec, Validation time: 6.69 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076587, time: 56.37 sec
+Model saved after epoch: 0
+P@1: 18.33, loss: 0.030641, time: 4.86 sec
+Epoch: 1, loss: 0.027967, time: 40.98 sec
+Training time: 97.36 sec, Validation time: 4.86 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076379, time: 230.10 sec
+Model saved after epoch: 0
+P@1: 19.24, loss: 0.030706, time: 21.45 sec
+Epoch: 1, loss: 0.027999, time: 222.78 sec
+Training time: 452.88 sec, Validation time: 21.45 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076379, time: 50.81 sec
+Model saved after epoch: 0
+P@1: 19.24, loss: 0.030706, time: 6.17 sec
+Epoch: 1, loss: 0.027999, time: 31.60 sec
+Training time: 82.41 sec, Validation time: 6.17 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076379, time: 42.57 sec
+Model saved after epoch: 0
+P@1: 19.24, loss: 0.030706, time: 5.30 sec
+Epoch: 1, loss: 0.027999, time: 38.41 sec
+Training time: 80.98 sec, Validation time: 5.30 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076379, time: 48.82 sec
+Model saved after epoch: 0
+P@1: 19.24, loss: 0.030706, time: 6.93 sec
+Epoch: 1, loss: 0.027999, time: 42.14 sec
+Training time: 90.96 sec, Validation time: 6.93 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl
+Loading training data.
+Loading validation data.
+Loading training data.
+Loading validation data.
+Epoch: 0, loss: 0.076379, time: 47.71 sec
+Model saved after epoch: 0
+P@1: 19.24, loss: 0.030706, time: 4.44 sec
+Epoch: 1, loss: 0.027999, time: 32.64 sec
+Training time: 80.35 sec, Validation time: 4.44 sec, Shortlist time: 0.00 sec, Model size: 7.24 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/surrogate/model_network.pkl

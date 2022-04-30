@@ -1,0 +1,70 @@
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.940801, time: 48.57 sec
+Model saved after epoch: 0
+P@k (knn): 41.53,35.56,31.01,27.45,24.43 (clf): 34.37,29.25,25.48,22.63,20.49 (ens): 40.98,34.14,29.80,26.48,24.09, loss: 10.347115, time: 7.19 sec
+Epoch: 1, loss: 11.267207, time: 49.27 sec
+Training time: 97.84 sec, Validation time: 7.19 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.914098, time: 37.31 sec
+Model saved after epoch: 0
+P@k (knn): 41.11,36.26,31.35,27.82,24.97 (clf): 33.39,28.79,24.85,22.66,20.56 (ens): 40.43,34.12,29.98,26.59,24.28, loss: 10.464636, time: 5.10 sec
+Epoch: 1, loss: 11.323247, time: 37.52 sec
+Training time: 74.83 sec, Validation time: 5.10 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.855808, time: 75.48 sec
+Model saved after epoch: 0
+P@k (knn): 40.90,35.47,31.15,27.26,24.54 (clf): 34.23,29.34,25.63,22.77,20.65 (ens): 41.61,34.96,30.14,26.45,24.16, loss: 10.373649, time: 7.04 sec
+Epoch: 1, loss: 11.220192, time: 46.91 sec
+Training time: 122.39 sec, Validation time: 7.04 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.855713, time: 39.11 sec
+Model saved after epoch: 0
+P@k (knn): 41.32,35.74,31.08,27.34,24.72 (clf): 34.37,29.31,25.59,22.86,20.69 (ens): 41.43,34.63,29.91,26.41,24.09, loss: 10.414932, time: 5.01 sec
+Epoch: 1, loss: 11.222880, time: 43.96 sec
+Training time: 83.07 sec, Validation time: 5.01 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.899810, time: 45.90 sec
+Model saved after epoch: 0
+P@k (knn): 40.96,35.78,31.19,27.45,24.83 (clf): 35.05,29.61,25.87,23.25,20.95 (ens): 41.48,34.81,30.18,26.39,24.12, loss: 10.442799, time: 6.81 sec
+Epoch: 1, loss: 11.244998, time: 46.60 sec
+Training time: 92.50 sec, Validation time: 6.81 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.835505, time: 48.79 sec
+Model saved after epoch: 0
+P@k (knn): 40.77,35.60,31.06,27.48,24.74 (clf): 33.60,28.60,25.15,22.76,20.56 (ens): 41.35,34.77,30.06,26.30,23.91, loss: 10.430225, time: 7.54 sec
+Epoch: 1, loss: 11.236288, time: 51.94 sec
+Training time: 100.73 sec, Validation time: 7.54 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl
+Loading training data.
+Loading validation data.
+Updating shortlist at epoch: 0
+ANN train time: 0.00 sec
+Epoch: 0, loss: 15.882133, time: 35.66 sec
+Model saved after epoch: 0
+P@k (knn): 40.77,35.56,31.11,27.28,24.74 (clf): 34.37,29.35,25.61,22.85,20.48 (ens): 41.22,34.83,29.89,26.33,23.78, loss: 10.446509, time: 4.74 sec
+Epoch: 1, loss: 11.256914, time: 35.15 sec
+Training time: 70.81 sec, Validation time: 4.74 sec, Shortlist time: 0.00 sec, Model size: 10.65 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/reranker/model_network.pkl

@@ -1,0 +1,125 @@
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 15.37 sec
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 13.88 sec
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 13.65 sec
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 13.34 sec
+Epoch: 0, loss: 43.066049, time: 84.30 sec
+Model saved after epoch: 0
+P@k (knn): 60.72,51.33,45.09,39.74,35.62 (clf): 33.71,28.98,25.45,22.60,20.08 (ens): 39.91,34.14,29.64,26.79,24.28, loss: 24.572886, time: 8.61 sec
+Epoch: 1, loss: 26.249656, time: 39.50 sec
+Training time: 123.80 sec, Validation time: 8.61 sec, Shortlist time: 13.34 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 11.47 sec
+Epoch: 0, loss: 42.514907, time: 35.08 sec
+Model saved after epoch: 0
+P@k (knn): 61.20,51.55,45.03,39.64,35.61 (clf): 35.39,29.88,26.03,23.25,20.66 (ens): 40.51,34.83,30.37,27.21,24.67, loss: 24.562790, time: 7.34 sec
+Epoch: 1, loss: 26.095012, time: 32.96 sec
+Training time: 68.05 sec, Validation time: 7.34 sec, Shortlist time: 11.47 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/fresh/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 35.12 sec
+Epoch: 0, loss: 42.943314, time: 77.88 sec
+Model saved after epoch: 0
+P@k (knn): 60.46,51.34,44.94,39.75,35.67 (clf): 34.29,29.34,25.77,22.71,20.48 (ens): 39.93,34.42,30.24,27.05,24.58, loss: 24.672412, time: 8.63 sec
+Epoch: 1, loss: 26.352624, time: 106.87 sec
+Training time: 184.76 sec, Validation time: 8.63 sec, Shortlist time: 35.12 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 10.16 sec
+Epoch: 0, loss: 43.030277, time: 28.24 sec
+Model saved after epoch: 0
+P@k (knn): 60.20,51.30,44.88,39.82,35.64 (clf): 33.53,29.30,25.66,22.76,20.44 (ens): 40.17,34.33,30.12,26.99,24.48, loss: 24.678705, time: 5.53 sec
+Epoch: 1, loss: 26.374267, time: 27.72 sec
+Training time: 55.96 sec, Validation time: 5.53 sec, Shortlist time: 10.16 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 11.31 sec
+Epoch: 0, loss: 43.001757, time: 32.95 sec
+Model saved after epoch: 0
+P@k (knn): 60.46,51.37,44.86,39.83,35.65 (clf): 33.66,29.68,25.97,23.09,20.48 (ens): 39.91,34.46,30.38,27.19,24.46, loss: 24.634206, time: 6.89 sec
+Epoch: 1, loss: 26.264571, time: 36.40 sec
+Training time: 69.35 sec, Validation time: 6.89 sec, Shortlist time: 11.31 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 17.07 sec
+Epoch: 0, loss: 43.221023, time: 52.22 sec
+Model saved after epoch: 0
+P@k (knn): 60.51,51.47,44.99,39.85,35.70 (clf): 34.10,29.76,26.04,22.95,20.44 (ens): 39.77,35.00,30.64,27.39,24.70, loss: 24.719082, time: 10.31 sec
+Epoch: 1, loss: 26.404441, time: 43.62 sec
+Training time: 95.85 sec, Validation time: 10.31 sec, Shortlist time: 17.07 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
+Loading training data.
+Computing and reusing intermediate document embeddings to save computations.
+Using the default encoder.
+Loading validation data.
+Updating shortlist at epoch: 0
+Using pre-trained embeddings for shortlist.
+Using the default encoder.
+ANN train time: 10.54 sec
+Epoch: 0, loss: 42.947308, time: 28.09 sec
+Model saved after epoch: 0
+P@k (knn): 60.33,51.43,44.91,39.80,35.63 (clf): 33.60,29.29,25.63,22.90,20.37 (ens): 39.62,34.31,30.19,27.23,24.64, loss: 24.654487, time: 5.47 sec
+Epoch: 1, loss: 26.349877, time: 28.40 sec
+Training time: 56.49 sec, Validation time: 5.47 sec, Shortlist time: 10.54 sec, Model size: 41.83 MB
+Saving model at: /home/kandharikunal/Documents/PawanSir/ChangesForDP/models/DeepXML/Astec/EURLex-4K/v_EURLex-4K_108/extreme/model_network.pkl
