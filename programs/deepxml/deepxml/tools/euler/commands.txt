@@ -1,0 +1,5 @@
+perl convert_format.pl /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/euler_test.txt /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/tsn_X_Xf.txt /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/tsn_X_Y.txt
+
+
+perl convert_format.pl /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/euler_train.txt /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/trn_X_Xf.txt /home/kandharikunal/Documents/PawanSir/fresh/programs/deepxml/deepxml/tools/euler/trn_X_Y.txt
+
