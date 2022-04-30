@@ -1,137 +1,161 @@
-# MTP2020-AttentionXML
+# DeepXML
 
-# Project Report
+Code for _DeepXML: A Deep Extreme Multi-Label Learning Framework Applied to Short Text Documents_
 
-Report present in ./docs folder.
+---
 
-# HAXMLNet
-Please follow the read me in folder HAXMLNet
+## Architectures and algorithms
 
-# AttentionXML
-[AttentionXML: Label Tree-based Attention-Aware Deep Model for High-Performance Extreme Multi-Label Text Classification](https://arxiv.org/abs/1811.01727)
+DeepXML supports multiple feature architectures such as Bag-of-embedding/Astec, RNN, CNN etc. The code uses a json file to construct the feature architecture. Features could be computed using following encoders:
 
-## Requirements
+* Bag-of-embedding/Astec: As used in the DeepXML paper [1].
+* RNN: RNN based sequential models. Support for RNN, GRU, and LSTM.
+* XML-CNN: CNN architecture as proposed in the XML-CNN paper [4].
 
-* python==3.7.4
-* click==7.0
-* ruamel.yaml==0.16.5
-* numpy==1.16.2
-* scipy==1.3.1
-* scikit-learn==0.21.2
-* gensim==3.4.0
-* torch==1.0.1
-* nltk==3.4
-* tqdm==4.31.1
-* joblib==0.13.2
-* logzero==1.5.0
+---
 
-## Datasets
+## Best Practices for features creation
 
-* [EUR-Lex](https://drive.google.com/open?id=1iPGbr5-z2LogtMFG1rwwekV_aTubvAb2)
-* [Wiki10-31K](https://drive.google.com/open?id=1Tv4MHQzDWTUC9hRFihRhG8_jt1h0VhnR)
-* [AmazonCat-13K](https://drive.google.com/open?id=1VwHAbri6y6oh8lkpZ6sSY_b1FRNnCLFL)
-* [Amazon-670K](https://drive.google.com/open?id=1Xd4BPFy1RPmE7MEXMu77E2_xWOhR1pHW)
-* [Wiki-500K](https://drive.google.com/open?id=1bGEcCagh8zaDV0ZNGsgF0QtwjcAm0Afk)
-* [Amazon-3M](https://drive.google.com/open?id=187vt5vAkGI2mS2WOMZ2Qv48YKSjNbQv4)
+---
 
-Download the GloVe embedding (840B,300d) and convert it to gensim format (which can be loaded by **gensim.models.KeyedVectors.load**).
+* Adding sub-words on top of unigrams to the vocabulary can help in training more accurate embeddings and classifiers.
 
-We also provide a converted GloVe embedding at [here](https://drive.google.com/file/d/10w_HuLklGc8GA_FtUSdnHT8Yo1mxYziP/view?usp=sharing). 
+---
 
-## XML Experiments
+## Setting up
 
-XML experiments in paper can be run directly such as:
-```bash
-./scripts/run_eurlex.sh
-```
-## Preprocess
+---
 
-Run preprocess.py for train and test datasets with tokenized texts as follows:
-```bash
-python preprocess.py \
---text-path data/EUR-Lex/train_texts.txt \
---label-path data/EUR-Lex/train_labels.txt \
---vocab-path data/EUR-Lex/vocab.npy \
---emb-path data/EUR-Lex/emb_init.npy \
---w2v-model data/glove.840B.300d.gensim
+### Expected directory structure
 
-python preprocess.py \
---text-path data/EUR-Lex/test_texts.txt \
---label-path data/EUR-Lex/test_labels.txt \
---vocab-path data/EUR-Lex/vocab.npy 
-```
-
-Or run preprocss.py including tokenizing the raw texts by NLTK as follows:
-```bash
-python preprocess.py \
---text-path data/Wiki10-31K/train_raw_texts.txt \
---tokenized-path data/Wiki10-31K/train_texts.txt \
---label-path data/Wiki10-31K/train_labels.txt \
---vocab-path data/Wiki10-31K/vocab.npy \
---emb-path data/Wiki10-31K/emb_init.npy \
---w2v-model data/glove.840B.300d.gensim
-
-python preprocess.py \
---text-path data/Wiki10-31K/test_raw_texts.txt \
---tokenized-path data/Wiki10-31K/test_texts.txt \
---label-path data/Wiki10-31K/test_labels.txt \
---vocab-path data/Wiki10-31K/vocab.npy 
-```
-
-
-## Train and Predict
-
-Train and predict as follows:
-```bash
-python main.py --data-cnf configure/datasets/EUR-Lex.yaml --model-cnf configure/models/AttentionXML-EUR-Lex.yaml 
-```
-
-Or do prediction only with option "--mode eval".
-
-## Ensemble
-
-Train and predict with an ensemble:
-```bash
-python main.py --data-cnf configure/datasets/Wiki-500K.yaml --model-cnf configure/models/FastAttentionXML-Wiki-500K.yaml -t 0
-python main.py --data-cnf configure/datasets/Wiki-500K.yaml --model-cnf configure/models/FastAttentionXML-Wiki-500K.yaml -t 1
-python main.py --data-cnf configure/datasets/Wiki-500K.yaml --model-cnf configure/models/FastAttentionXML-Wiki-500K.yaml -t 2
-python ensemble.py -p results/FastAttentionXML-Wiki-500K -t 3
-```
-
-## Evaluation
-
-```bash
-python evaluation.py --results results/AttentionXML-EUR-Lex-labels.npy --targets data/EUR-Lex/test_labels.npy
-```
-Or get propensity scored metrics together:
-
-```bash
-python evaluation.py \
---results results/FastAttentionXML-Amazon-670K-labels.npy \
---targets data/Amazon-670K/test_labels.npy \
---train-labels data/Amazon-670K/train_labels.npy \
--a 0.6 \
--b 2.6
+```txt
++-- <work_dir>
+|  +-- programs
+|  |  +-- deepxml
+|  |    +-- deepxml
+|  +-- data
+|    +-- <dataset>
+|  +-- models
+|  +-- results
 
 ```
 
-## Reference
-You et al., [AttentionXML: Label Tree-based Attention-Aware Deep Model for High-Performance Extreme Multi-Label Text Classification](https://arxiv.org/abs/1811.01727), NeurIPS 2019
+### Download data for Astec
 
-## Declaration
-It is free for non-commercial use. For commercial use, please contact Mr. Ronghi You and Prof. Shanfeng Zhu (zhusf@fudan.edu.cn).
+```txt
+* Download the (zipped file) BoW features from XML repository.  
+* Extract the zipped file into data directory. 
+* The following files should be available in <work_dir>/data/<dataset> for new datasets (ignore the next step)
+    - trn_X_Xf.txt
+    - trn_X_Y.txt
+    - tst_X_Xf.txt
+    - tst_X_Y.txt
+    - fasttextB_embeddings_300d.npy or fasttextB_embeddings_512d.npy
+* The following files should be available in <work_dir>/data/<dataset> if the dataset is in old format (please refer to next step to convert the data to new format)
+    - train.txt
+    - test.txt
+    - fasttextB_embeddings_300d.npy or fasttextB_embeddings_512d.npy 
+```
+
+### Convert to new data format
+
+```perl
+# A perl script is provided (in deepxml/tools) to convert the data into new format as expected by Astec
+# Either set the $data_dir variable to the data directory of a particular dataset or replace it with the path
+perl convert_format.pl $data_dir/train.txt $data_dir/trn_X_Xf.txt $data_dir/trn_X_Y.txt
+perl convert_format.pl $data_dir/test.txt $data_dir/tst_X_Xf.txt $data_dir/tst_X_Y.txt
+```
+
+## Example use cases
+
+---
+
+### A single learner with DeepXML framework
+
+The DeepXML framework can be utilized as follows. A json file is used to specify architecture and other arguments. Please refer to the full documentation below for more details.
+
+```bash
+./run_main.sh 0 DeepXML EURLex-4K 0 108
+```
+
+### An ensemble of multiple learners with DeepXML framework
+
+An ensemble can be trained as follows. A json file is used to specify architecture and other arguments.
+
+```bash
+./run_main.sh 0 DeepXML EURLex-4K 0 108,666,786
+```
+
+## Full Documentation
+
+```txt
+./run_main.sh <gpu_id> <framework> <dataset> <version> <seed>
+
+* gpu_id: Run the program on this GPU.
+
+* framework
+  - DeepXML: Divides the XML problems in 4 modules as proposed in the paper.
+  - DeepXML-OVA: Train the architecture in 1-vs-all fashion [4][5], i.e., loss is computed for each label in each iteration.
+  - DeepXML-ANNS: Train the architecture using a label shortlist. Support is available for a fixed graph or periodic training of the ANNS graph.
+
+* dataset
+  - Name of the dataset.
+  - Astec expects the following files in <work_dir>/data/<dataset>
+    - trn_X_Xf.txt
+    - trn_X_Y.txt
+    - tst_X_Xf.txt
+    - tst_X_Y.txt
+    - fasttextB_embeddings_300d.npy or fasttextB_embeddings_512d.npy
+  - You can set the 'embedding_dims' in config file to switch between 300d and 512d embeddings.
+
+* version
+  - different runs could be managed by version and seed.
+  - models and results are stored with this argument.
+
+* seed
+  - seed value as used by numpy and PyTorch.
+  - an ensemble is learned if multiple comma separated values are passed.
+```
+
+### Notes
+
+```txt
+* Other file formats such as npy, npz, pickle are also supported.
+* Initializing with token embeddings (computed from FastText) leads to noticible accuracy gain in Astec. Please ensure that the token embedding file is available in data directory, if 'init=token_embeddings', otherwise it'll throw an error.
+* Config files are made available in deepxml/configs/<framework>/<method> for datasets in XC repository. You can use them when trying out Astec/DeepXML on new datasets.
+* We conducted our experiments on a 24-core Intel Xeon 2.6 GHz machine with 440GB RAM with a single Nvidia P40 GPU. 128GB memory should suffice for most datasets.
+* Astec make use of CPU (mainly for nmslib) as well as GPU. 
+```
+
+## Cite as
+
+```bib
+@InProceedings{Dahiya21,
+    author = "Dahiya, K. and Saini, D. and Mittal, A. and Shaw, A. and Dave, K. and Soni, A. and Jain, H. and Agarwal, S. and Varma, M.",
+    title = "DeepXML: A Deep Extreme Multi-Label Learning Framework Applied to Short Text Documents",
+    booktitle = "Proceedings of the ACM International Conference on Web Search and Data Mining",
+    month = "March",
+    year = "2021"
+}
+```
 
 
+## YOU MAY ALSO LIKE
+- [DECAF: Deep Extreme Classification with Label Features](https://github.com/Extreme-classification/DECAF)
+- [GalaXC: Graph Neural Networks with Labelwise Attention for Extreme Classification](https://github.com/Extreme-classification/GalaXC)
+- [ECLARE: Extreme Classification with Label Graph Correlations](https://github.com/Extreme-classification/ECLARE)
 
-<br>
-Drive Link For Attention Weight and Score : https://drive.google.com/open?id=1MQPfrf3yiufJxHC3qsH-Ts3cu9fHzdST
-<br>It contains the images of Network Structure.
-<br>
-To extract attention score for Attention XML model in deepxml/modules.py
-<br>Inside class <b>MLAttention</b> in forward method the code is present to add all the attention score
-<br>We need to seperately take average
-<br> Step1 : Open Python terminal
-<br> Step2 : a = np.load(filename)
-<br> Step3 : a = a/(dataset_size*epochs)
+## References
 
+---
+[1] K. Dahiya, D. Saini, A. Mittal, A. Shaw, K. Dave, A. Soni, H. Jain, S. Agarwal, and M. Varma. Deepxml:  A deep extreme multi-label learning framework applied to short text documents. In WSDM, 2021.
 
+[2] pyxclib: <https://github.com/kunaldahiya/pyxclib>
+
+[3] H. Jain,  V. Balasubramanian,  B. Chunduri and M. Varma, Slice: Scalable linear extreme classifiers trained on 100 million labels for related searches, In WSDM 2019.
+
+[4] J. Liu,  W.-C. Chang,  Y. Wu and Y. Yang, XML-CNN: Deep Learning for Extreme Multi-label Text Classification, In SIGIR 2017.
+
+[5]  R. Babbar, and B. Schölkopf, DiSMEC - Distributed Sparse Machines for Extreme Multi-label Classification In WSDM, 2017.
+
+[6] P., Bojanowski, E. Grave, A. Joulin, and T. Mikolov. Enriching word vectors with subword information. In TACL, 2017.
